@@ -1,0 +1,40 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    // background: #000;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+    transition:  .3s;
+    display: inline-block;
+    
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+/* Reset headings */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+/* Container */
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}

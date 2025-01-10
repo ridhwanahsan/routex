@@ -1,0 +1,68 @@
+.navbar {
+    background:  $gray-light;
+    padding: 20px 0;
+.navbar-nav{
+  margin-right: 120px;
+  .nav-item{
+    a{
+         font-size: 16px;
+         font-weight: 600;
+         transition: .3s;
+         margin: 0 auto;
+        &:hover{
+            color: $green-lime;
+        }
+          svg{
+        width: 22px;
+        height: 22px;     
+        margin-right: 5px;
+    }
+    }
+    &:hover .sub-menu{
+        visibility: visible;
+        opacity: 1;
+        position: absolute;
+        background-color: $white;
+        width: 240px;
+        margin-top: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        transition: .3s;
+    }
+    
+  }
+    .sub-menu
+    {
+        visibility: hidden;
+        opacity: 0;
+       li{
+        list-style: none;
+     
+        a{
+        display: flex;
+        padding: 10px 22PX;
+        background-color: $white;
+        &:hover{
+            background-color: $green-lime;
+            color: $white;
+
+        }
+       }
+    
+  }
+} 
+}
+.nav-btn{
+    background: $green-lime;
+    color: $white;
+    padding: 20px 30px;
+    border-radius: 5px;
+    border-radius: 150px;
+    transition: .3s;
+   
+    &:hover{
+        background: $green-dark;
+        
+    }
+}
+}
