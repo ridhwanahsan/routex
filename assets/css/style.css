@@ -11,6 +11,7 @@ body {
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #F1F5EB;
 }
 
 a {
@@ -40,7 +41,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar {
-  background: #F1F5EB;
   padding: 20px 0;
 }
 .navbar .navbar-nav {
@@ -56,10 +56,18 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .navbar-nav .nav-item a:hover {
   color: #83CD20;
 }
+.navbar .navbar-nav .nav-item a:focus {
+  color: #83CD20;
+}
 .navbar .navbar-nav .nav-item a svg {
   width: 22px;
   height: 22px;
   margin-right: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.navbar .navbar-nav .nav-item a:hover svg {
+  rotate: -50deg;
 }
 .navbar .navbar-nav .nav-item:hover .sub-menu {
   visibility: visible;
@@ -92,6 +100,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #83CD20;
   color: #FFFFFF;
 }
+.navbar .navbar-nav .sub-menu li a:focus {
+  background-color: #83CD20;
+  color: #F1F5EB;
+}
 .navbar .nav-btn {
   background: #83CD20;
   color: #FFFFFF;
@@ -103,4 +115,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar .nav-btn:hover {
   background: #034833;
+}
+
+.col-lg3 .item-box {
+  width: 120px;
+  height: 200px;
+  background-color: gainsboro;
 }

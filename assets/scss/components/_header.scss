@@ -1,21 +1,35 @@
 .navbar {
-    background:  $gray-light;
+ 
     padding: 20px 0;
 .navbar-nav{
   margin-right: 120px;
   .nav-item{
+    
     a{
          font-size: 16px;
          font-weight: 600;
          transition: .3s;
          margin: 0 auto;
+         
         &:hover{
             color: $green-lime;
+         
         }
+         &:focus{
+          color: $green-lime;
+         }
           svg{
         width: 22px;
         height: 22px;     
         margin-right: 5px;
+        transition: .3s;
+        
+    }
+
+    &:hover{
+      svg{
+        rotate: -50deg;
+      }
     }
     }
     &:hover .sub-menu{
@@ -33,8 +47,8 @@
   }
     .sub-menu
     {
-        visibility: hidden;
-        opacity: 0;
+      visibility: hidden;
+      opacity: 0;
        li{
         list-style: none;
      
@@ -46,6 +60,10 @@
             background-color: $green-lime;
             color: $white;
 
+        }
+        &:focus{
+          background-color: $green-lime;
+          color: $gray-light;
         }
        }
     
